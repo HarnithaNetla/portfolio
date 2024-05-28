@@ -131,6 +131,15 @@ nav ul li a {
     border-color: #CAA6A6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.skills-title {
+    color: #000 !important; /* Black color for the Skills title */
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Applying Montserrat font */
+}
 
 .skill {
     background: linear-gradient(145deg, #944E63, #B47B84); /* Combining Main and Secondary Colors */
@@ -157,7 +166,54 @@ nav ul li a {
 .portfolio-item {
     margin: 1rem;
     max-width: 300px;
+    position: relative; /* Add this to position the image overlay */
 }
+
+.portfolio-item img {
+    
+    width: 10%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+    transition: all ease-in-out 0.5s; /* Add smooth transition on hover */
+}
+
+.portfolio-item img:hover {
+    width:50%;
+}
+
+
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add smooth transition for opacity */
+}
+
+.overlay-content {
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content p {
+    font-size: 0.9rem;
+}
+
 
 .portfolio-link {
     display: inline-block;
@@ -167,7 +223,8 @@ nav ul li a {
 }
 
 #portfolio h2 {
-    color: #FEAE6F;
+    color: #944E63;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #contact form {
@@ -186,7 +243,6 @@ nav ul li a {
     padding: 0.5rem;
     margin-top: 0.5rem;
 }
-
 #contact form button {
     margin-top: 1rem;
     background: #ff6347;
@@ -198,12 +254,12 @@ nav ul li a {
 
 .contact-info {
     margin-top: 2rem;
-    color: #75e3ef;
+    color: #944E63;
 }
 
 .social-media a {
     margin: 0 0.5rem;
-    color: #028391;
+    color: #a28080;
     text-decoration: none;
 }
 
