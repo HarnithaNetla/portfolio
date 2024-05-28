@@ -53,14 +53,14 @@ nav ul li a {
 }
 
 .hero-content h2:hover {
-    color: #028391;
+    color: #FFE7E7;
 }
 
 .hero-content h1 {
     position: relative;
     display: inline-block;
     font-size: 6rem;
-    color: #FFE7E7; /* 3% Highlight Color */
+    color: #B47B84; /* 3% Highlight Color */
     margin-right: 100px;
     overflow: hidden;
 }
@@ -114,7 +114,7 @@ nav ul li a {
     width: 200px;
     border-radius: 50%;
     border: 5px solid;
-    border-color: #FEAE6F;
+    border-color: #CAA6A6;
     margin-bottom: 1rem;
 }
 
@@ -126,8 +126,9 @@ nav ul li a {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 2rem;
-    background: #B47B84; /* 30% Secondary Color */
     border-radius: 10px;
+    border: 1px solid;
+    border-color: #CAA6A6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
